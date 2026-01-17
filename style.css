@@ -961,7 +961,7 @@ body {
 }
 
 .milestone-amount {
-    width: 100px;
+    width: 130px;
     padding: 12px 15px;
     background: var(--primary-gold);
     color: var(--primary-dark);
@@ -1028,13 +1028,13 @@ body {
 /* Responsive adjustments for rewards */
 @media (max-width: 768px) {
     .rewards-timeline::before {
-        left: 80px;
+        left: 100px;
     }
     
     .milestone-amount {
-        width: 80px;
+        width: 100px;
         margin-right: 20px;
-        font-size: 1rem;
+        font-size: 0.95rem;
         padding: 10px 12px;
     }
     
@@ -1056,6 +1056,7 @@ body {
         width: 100%;
         margin-right: 0;
         margin-bottom: 15px;
+        font-size: 1rem;
     }
     
     .milestone-content:hover {

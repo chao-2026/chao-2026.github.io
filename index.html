@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHA◎ - Legends of the Asian Gods: Battle for Heaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Noto+Serif+SC:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Overlay -->
+    <div class="background-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>CHA<span class="taiji">◎</span></h1>
+                <p class="subtitle">Legends of the Asian Gods</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#rules">Rules</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Battle for Heaven</h2>
+                <p class="tagline">A strategic social deduction game blending ancient Chinese mythology, I Ching divination, and intense player interaction</p>
+                <div class="cta-buttons">
+                    <a href="#characters" class="btn btn-primary">Explore Characters</a>
+                    <a href="#rules" class="btn btn-secondary">Learn Rules</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/dajissssss-001.jpg" alt="CHA◎ - Legends of the Asian Gods" class="hero-main-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">What is CHA◎?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>CHA◎ is a 6-10 player social deduction and strategy game set in the mythological world of the <em>Investiture of the Gods</em>. Players take on roles of gods, immortals, demons, and mortals from ancient Chinese mythology, each with unique abilities tied to I Ching hexagrams.</p>
+                    
+                    <p>The game unfolds through cycles of <strong>Night Actions</strong> and <strong>Day Discussions/Voting</strong>, where three factions vie for control:</p>
+                    
+                    <div class="factions">
+                        <div class="faction">
+                            <h3><span class="faction-icon heaven">H</span> Heaven (Order)</h3>
+                            <p>The Order of Heaven seeks to maintain cosmic balance by eliminating the Chaos faction.</p>
+                        </div>
+                        <div class="faction">
+                            <h3><span class="faction-icon chasm">C</span> Chasm (Chaos)</h3>
+                            <p>The Rebellion of Chaos fights against heavenly mandates, pursuing absolute freedom.</p>
+                        </div>
+                        <div class="faction">
+                            <h3><span class="faction-icon anarchy">A</span> Anarchy (Mortals)</h3>
+                            <p>Mortals navigate the conflict with personal agendas, choosing sides for their own survival.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="game-box">
+                        <div class="box-front">
+                            <h3>CHA◎ Game Box</h3>
+                            <p>Includes 64 character cards, game board, tokens, and I Ching divination guide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="section philosophy">
+        <div class="container">
+            <h2 class="section-title">The Fourfold Philosophy</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">C</div>
+                    <h3>CHASM</h3>
+                    <p class="subtitle">The Rebellion of Chaos</p>
+                    <p>Representing the截教 (Jie Jiao) faction, born from the裂隙 (rift) in heavenly order. They embrace chaos as a path to true freedom, willing to descend into the abyss to break predetermined fate.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">H</div>
+                    <h3>HEAVEN</h3>
+                    <p class="subtitle">The Mandate of Order</p>
+                    <p>Representing the闡教 (Chan Jiao) faction, upholders of天命 (heavenly mandate). They are the embodiment of cosmic rules, celestial light pursuing stability and ideal harmony.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">A</div>
+                    <h3>ANARCHY</h3>
+                    <p class="subtitle">The Will of Mortals</p>
+                    <p>Representing凡人 (mortals) caught between godly conflicts. Each mortal is driven by personal ambition, revenge, or sacrifice, seeking their own path in the chaotic world.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="philosophy-icon taiji-icon">◎</div>
+                    <h3>TAIJITU</h3>
+                    <p class="subtitle">The Eternal Cycle</p>
+                    <p>The game's core symbol representing beginning, ending, and endless循环 (cycle). Each conclusion becomes the next beginning in an eternal dance of yin and yang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="section characters">
+        <div class="container">
+            <h2 class="section-title">Legendary Characters</h2>
+            <p class="section-subtitle">Each character is associated with an I Ching hexagram and unique abilities</p>
+            
+            <div class="character-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="heaven">Heaven</button>
+                <button class="filter-btn" data-filter="chasm">Chasm</button>
+                <button class="filter-btn" data-filter="mortal">Mortal</button>
+                <button class="filter-btn" data-filter="neutral">Neutral</button>
+            </div>
+            
+            <div class="characters-grid">
+                <!-- Characters will be populated by JavaScript -->
+            </div>
+            
+            <div class="character-detail-modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <div class="modal-body">
+                        <!-- Character details will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section id="gameplay" class="section gameplay">
+        <div class="container">
+            <h2 class="section-title">Gameplay Flow</h2>
+            <div class="gameplay-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>The Beginning</h3>
+                    <p>Players receive secret roles with unique abilities and I Ching hexagrams.申公豹 (Shen Gongbao) may disrupt a player's first night.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Night of Shadows</h3>
+                    <p>Gods and demons awaken in sequence: 通天教主 → 楊戩 → 姜子牙 → 鄧嬋玉 → 聞仲 → 妲己 → 雷震子. </p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Day of Judgment</h3>
+                    <p>Reveal night results, debate identities, and vote to exile suspects. 紂王 (King Zhou) has 2 votes. 伯邑考 (Bo Yikao) can sacrifice to take another with him.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Ascension Scroll</h3>
+                    <p>Eliminated souls enter the封神榜 (Ascension Scroll), sending one-word clues to influence the living in subsequent nights.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">◎</div>
+                    <h3>Eternal Cycle</h3>
+                    <p>When a faction achieves victory, the cycle resets. The fallen become legends, and new stories begin with different roles and alliances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="section rules">
+        <div class="container">
+            <h2 class="section-title">Core Rules</h2>
+            <div class="rules-content">
+                <div class="rules-card">
+                    <h3><i class="fas fa-users"></i> Player Count</h3>
+                    <p>6-10 players (optimized for 8-10)</p>
+                </div>
+                <div class="rules-card">
+                    <h3><i class="fas fa-clock"></i> Game Duration</h3>
+                    <p>45-60 minutes per session</p>
+                </div>
+                <div class="rules-card">
+                    <h3><i class="fas fa-trophy"></i> Victory Conditions</h3>
+                    <ul>
+                        <li><strong>Heaven:</strong> Eliminate all Chasm members</li>
+                        <li><strong>Chasm:</strong> Eliminate all Heaven members</li>
+                        <li><strong>Mortals:</strong> Achieve personal objectives</li>
+                    </ul>
+                </div>
+                <div class="rules-card">
+                    <h3><i class="fas fa-moon"></i> Night Order</h3>
+                    <ol>
+                        <li>通天教主 (Lord Tongtian)</li>
+                        <li>楊戩 (Yang Jian)</li>
+                        <li>姜子牙 (Jiang Ziya)</li>
+                        <li>鄧嬋玉 (Deng Chanyu)</li>
+                        <li>聞仲 (Wen Zhong)</li>
+                        <li>妲己 (Daji)</li>
+                        <li>雷震子 (Lei Zhenzi)</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="rules-notes">
+                <h3>Key Mechanics</h3>
+                <div class="notes-grid">
+                    <div class="note">
+                        <h4><i class="fas fa-user-slash"></i> Opening Disruption</h4>
+                        <p>申公豹 (Shen Gongbao) can disrupt a player's first night ability, adding an element of uncertainty from the very start.</p>
+                    </div>
+                    <div class="note">
+                        <h4><i class="fas fa-shield-alt"></i> Guard Protection</h4>
+                        <p>楊戩's Guard can block one attack (except unblockable attacks like 通天教主's Sword Array).</p>
+                    </div>
+                    <div class="note">
+                        <h4><i class="fas fa-scroll"></i> Ascension Scroll</h4>
+                        <p>Dead players send one-word clues to influence the living, maintaining engagement.</p>
+                    </div>
+                    <div class="note">
+                        <h4><i class="fas fa-yin-yang"></i> I Ching Integration</h4>
+                        <p>Each character's hexagram provides thematic depth and can be used for divination.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CHA<span class="taiji">◎</span></h2>
+                    <p>Your journey through myth begins here</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About the Game</a></li>
+                        <li><a href="#characters">Character Guide</a></li>
+                        <li><a href="#rules">Rulebook</a></li>
+                        <li><a href="#philosophy">Game Philosophy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CHA◎ - Legends of the Asian Gods. All rights reserved. | Game design inspired by Chinese mythology and <em>Investiture of the Gods</em></p>
+                <p class="disclaimer">This is a fan website for the conceptual board game CHA◎. All mythological references are based on public domain stories.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

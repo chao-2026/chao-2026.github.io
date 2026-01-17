@@ -884,6 +884,185 @@ body {
     line-height: 1.6;
 }
 
+/* Rewards Section */
+.rewards {
+    background: rgba(10, 10, 26, 0.8);
+}
+
+.funding-progress {
+    max-width: 800px;
+    margin: 50px auto 70px;
+}
+
+.progress-bar {
+    height: 20px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-glow);
+    margin-bottom: 15px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, var(--primary-gold), var(--chasm-purple));
+    border-radius: 10px;
+    position: relative;
+    transition: width 1s ease;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.current-amount {
+    color: var(--primary-gold);
+}
+
+.target-amount {
+    color: var(--text-dim);
+}
+
+.rewards-timeline {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    position: relative;
+}
+
+.rewards-timeline::before {
+    content: '';
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary-gold), transparent);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.milestone-amount {
+    width: 100px;
+    padding: 12px 15px;
+    background: var(--primary-gold);
+    color: var(--primary-dark);
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-right: 30px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.milestone-content {
+    flex: 1;
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-glow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.milestone-content:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.milestone-content h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.milestone-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.rewards-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.rewards-cta .btn {
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-note {
+    color: var(--text-dim);
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for rewards */
+@media (max-width: 768px) {
+    .rewards-timeline::before {
+        left: 80px;
+    }
+    
+    .milestone-amount {
+        width: 80px;
+        margin-right: 20px;
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+    
+    .milestone-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rewards-timeline::before {
+        display: none;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .milestone-amount {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .milestone-content:hover {
+        transform: translateY(-5px);
+    }
+}
+
 /* Footer */
 .footer {
     background: rgba(10, 10, 26, 0.95);

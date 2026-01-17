@@ -176,7 +176,6 @@ function initCharacters() {
             <div class="character-body">
                 <div class="character-hexagram">${character.hexagram}</div>
                 <div class="character-title">${character.title}</div>
-                <div class="character-skill">${character.skill}</div>
             </div>
         `;
         
@@ -249,10 +248,6 @@ function showCharacterDetail(characterId) {
                 <h3>I Ching Hexagram</h3>
                 <div class="hexagram-symbol">${character.hexagram}</div>
                 <p class="faction-desc">${factionDescription}</p>
-            </div>
-            <div class="detail-skill">
-                <h3>Special Ability</h3>
-                <p>${character.skill}</p>
             </div>
             <div class="detail-description">
                 <h3>Background Story</h3>
